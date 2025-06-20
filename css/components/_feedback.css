@@ -186,7 +186,7 @@ form textarea{
 }
 
 form button{
-    background-color: white;
+    background-color: #ffffff;
     color: #474747;
     height: 50px;
     max-width: 433px;
@@ -194,7 +194,20 @@ form button{
     margin-top: 40px;
     border-radius: 69px;
     
+    
 }
+form button:hover{
+    background-color: #009FD9;
+    color: #FFFA77;
+    height: 50px;
+    max-width: 433px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 69px;
+    transition:background-color .6s ,color .6s;
+    
+}
+
 form{
     display: flex;
     flex-direction: column;

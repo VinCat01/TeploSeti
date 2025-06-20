@@ -31,8 +31,7 @@
     font-size: 32px;
     color: #363636;
     border-radius: 20px;
-    transition: color .8s;
-    transition: background-color .8s;
+    transition: background-color .8s , color .8s;
 }
 
 .blog_name{
