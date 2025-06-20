@@ -34,3 +34,27 @@
     transition: color .8s;
     transition: background-color .8s;
 }
+
+.blog_name{
+    margin: 50px ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+
+}
+
+.announcement{
+    max-width: 1736px;
+    width: 100%;
+    min-height: 2257px;
+    background-color: #51BCFF;
+    margin: 0 auto;
+    border-radius: 153px;
+    padding: 127px 80px;
+    color: white;
+    font-size: 32px;
+    
+    
+}
