@@ -89,6 +89,7 @@
             border-radius: 50%;
             background-color: #ccc;
             cursor: pointer;
+            margin-bottom: 60px;
         }
         
         .nav-dot.active {
@@ -127,3 +128,74 @@
                 margin-top: 20px;
             }
         }
+.send_feedback{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 40px;
+    padding: 30px 110px;
+    border-radius: 153px;
+    max-width: 1736px;
+    min-height: 865px;
+    width: 100%;
+    color: white;
+    background-color: #51BCFF;
+    text-align: center;
+}
+.send_feedback form{
+    display: flex;
+    margin-top:130px;
+    max-width: 1490px;
+    min-height: 460px;
+}
+
+form p{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    max-width: 433px;
+
+}
+
+.f{
+    background-color: white;
+    color: #474747;
+    max-width: 433px;
+    width: 100%;
+    height: 57px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius:69px ;
+    padding: 10px;
+    font-size: 32px;
+}
+.f_1{
+display: flex;
+gap: 40px;
+}
+
+form textarea{
+    background-color: white;
+    color: #474747;
+    max-width: 948px;
+    width: 100%;
+    height: 412px;
+    padding: 15px;
+    border-radius:69px ;
+    margin-top: 50px;
+}
+
+form button{
+    background-color: white;
+    color: #474747;
+    height: 50px;
+    max-width: 433px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 69px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
