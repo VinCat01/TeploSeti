@@ -212,3 +212,28 @@ form{
     display: flex;
     flex-direction: column;
 }
+
+.thx{
+    display: none;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 50px;
+    padding: 30px 110px;
+    border-radius: 153px;
+    max-width: 1736px;
+    min-height: 865px;
+    width: 100%;
+    color: white;
+    background-color: #51BCFF;
+    text-align: center;
+    
+    justify-content: center;
+}
+
+.thx.open{
+    display: flex;
+}
+
+.send_feedback.none{
+    display: none;
+}

@@ -130,3 +130,18 @@ document.addEventListener('DOMContentLoaded', function() {
             // Handle window resize
             window.addEventListener('resize', handleResize);
         });
+
+
+        var feed = document.querySelector(".send_feedback")
+        var thx = document.querySelector(".thx")
+
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', handleSubmit);
+        function handleSubmit(event) {
+      event.preventDefault();
+      feed.classList.add("none")
+      thx.classList.add("open")
+      
+      console.log('Форма отправлена, но страница не перезагружается');
+    }
