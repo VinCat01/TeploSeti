@@ -1,4 +1,4 @@
-footer{
+footer {
     background-color: rgba(0, 0, 0, .55);
     max-width: 1920px;
     min-height: 595px;
@@ -7,19 +7,20 @@ footer{
     padding: 65px 40px;
     justify-content: space-between;
 }
-.about_foot{
+
+.about_foot {
     font-size: 32px;
     max-width: 763px;
     min-height: 507px;
     color: white;
 }
 
-.about_foot span{
+.about_foot span {
     font-size: 40px;
 
 }
 
-.contact_foot{
+.contact_foot {
     font-size: 32px;
     max-width: 763px;
     min-height: 400px;
@@ -27,7 +28,32 @@ footer{
 
 }
 
-.contact_foot span{
+.contact_foot span {
     font-size: 40px;
 
 }
+
+@media (max-width:850px) {
+    .about_foot {
+        font-size: 20px;
+    }
+
+    .about_foot span {
+        font-size: 24px;
+
+    }
+    .contact_foot {
+        font-size: 20px;
+    }
+    .contact_foot span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:550px) {
+    footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
