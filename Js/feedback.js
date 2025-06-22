@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             
-            // Create dots
+            
             function createDots() {
                 dotsContainer.innerHTML = '';
                 const dotCount = Math.ceil(cardCount / cardsPerView);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             function goToSlide(index) {
-                const cardWidth = cards[0].offsetWidth + 20; // including gap
+                const cardWidth = cards[0].offsetWidth + 20; 
                 slider.scrollTo({
                     left: index * cardsPerView * cardWidth,
                     behavior: 'smooth'
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             function scrollToCurrentIndex() {
-                const cardWidth = cards[0].offsetWidth + 20; // including gap
+                const cardWidth = cards[0].offsetWidth + 20; 
                 slider.scrollTo({
                     left: currentIndex * cardsPerView * cardWidth,
                     behavior: 'smooth'
@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 scrollToCurrentIndex();
             }
             
-            // Initialize
+           
             updateCardsPerView();
             createDots();
             
-            // Button events
+            
             prevBtn.addEventListener('click', () => {
                 if (currentIndex > 0) {
                     currentIndex--;
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            // Touch events for better mobile handling
+            
             let touchStartX = 0;
             let touchEndX = 0;
             
@@ -100,12 +100,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             function handleSwipe() {
                 const diff = touchStartX - touchEndX;
-                if (Math.abs(diff) > 50) { // threshold for swipe
+                if (Math.abs(diff) > 50) { 
                     const maxIndex = Math.ceil(cardCount / cardsPerView) - 1;
                     
-                    if (diff > 0 && currentIndex < maxIndex) { // swipe left
+                    if (diff > 0 && currentIndex < maxIndex) { 
                         currentIndex++;
-                    } else if (diff < 0 && currentIndex > 0) { // swipe right
+                    } else if (diff < 0 && currentIndex > 0) { 
                         currentIndex--;
                     }
                     
@@ -113,12 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             
-            // Update on scroll
+            
             let debounceTimer;
             slider.addEventListener('scroll', () => {
                 clearTimeout(debounceTimer);
                 debounceTimer = setTimeout(() => {
-                    const cardWidth = cards[0].offsetWidth + 20; // including gap
+                    const cardWidth = cards[0].offsetWidth + 20; 
                     const newIndex = Math.round(slider.scrollLeft / (cardWidth * cardsPerView));
                     if (newIndex !== currentIndex) {
                         currentIndex = newIndex;
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 100);
             });
             
-            // Handle window resize
+            
             window.addEventListener('resize', handleResize);
         });
 
@@ -143,5 +143,5 @@ document.addEventListener('DOMContentLoaded', function() {
       feed.classList.add("none")
       thx.classList.add("open")
       
-      console.log('Форма отправлена, но страница не перезагружается');
+      console.log();
     }

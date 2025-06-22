@@ -1,4 +1,4 @@
-// Добавьте этот скрипт перед закрывающим тегом </body>
+
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('.nav');
