@@ -5,6 +5,7 @@ footer{
     margin-top: 45px;
     display: flex;
     padding: 65px 40px;
+    justify-content: space-between;
 }
 .about_foot{
     font-size: 32px;

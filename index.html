@@ -24,7 +24,7 @@
                     <div class="dropdown">
                         <button class="dropdown-btn">Выберите вариант</button>
                         <div class="dropdown-content">
-                            <a href="#">Личный кабинет</a>
+                            <a class="open-modal-btn" href="#">Личный кабинет</a>
                             <a href="#">Тарифы и нормативы</a>
                         </div>
                     </div>
@@ -32,6 +32,25 @@
                 </div>
             </div>
         </header>
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <button class="close-btn">&times;</button>
+                <h2>Регистрация</h2>
+                <form action="" method="get" onsubmit="handleSubmit(event)">
+                    <div class="r_1">
+                        <p>
+                            <label for="r_name r">Введите имя:</label>
+                            <input class="r_name r" type="text" name="name" id="name " required>
+                            <label for="r_phone r">Введите номер телефона:</label>
+                            <input class="r_phone r" type="number" name="phone" id="phone" required>
+                            <label for="r_mail r">Введите почту:</label>
+                            <input class="r_mail r" type="email" name="email" id="email" required>
+                        </p>
+                    </div>
+                    <button type="button">Отправить</button>
+                </form>
+            </div>
+        </div>
         <div class="slider-container">
             <div class="slider">
                 <div class="slide" data-index="0">
@@ -55,7 +74,7 @@
         </div>
         <div class="connect_blog">
             <p>МП «Теплосети» МО «Гиагинское сельское поселение» </p>
-            <button class="connect_button">Подключение к сетям</button>
+            <button id="open-modal-btn"  class="connect_button ">Подключение к сетям</button>
         </div>
         <p class="blog_name">Объявления</p>
         <div class="announcement">
@@ -220,7 +239,8 @@
 
     </div>
 </body>
-<script src="Js/slider.js" src="Js/feedback.js"></script>
+<script src="Js/slider.js"></script>
 <script src="Js/feedback.js"></script>
+<script src="Js/modal.js"></script>
 
 </html>

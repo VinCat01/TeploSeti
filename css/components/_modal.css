@@ -1,0 +1,79 @@
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.open{
+    display: flex;
+}
+
+/* Само модальное окно */
+.modal {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #46CEFF;
+    padding: 40px 20px;
+    border-radius: 88px;
+    width: 80%;
+    max-width: 584px;
+    min-height: 692px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1001;
+    /* Выше чем оверлей */
+    filter: none !important;
+    /* Отключаем размытие для модального окна */
+}
+
+/* Кнопка закрытия */
+.close-btn {
+    position: absolute;
+    top: -50px;
+    right: -10px;
+    font-size: 100px;
+    font-weight: bold;
+    color: #2390D3;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.close-btn:hover {
+    color: #176392;
+}
+
+/* Класс для затемнения основного контента */
+.blur-background .page-content {
+    filter: blur(2px);
+}
+
+.modal form{
+    color: white;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.r {
+    background-color: white;
+    color: #474747;
+    max-width: 433px;
+    width: 100%;
+    height: 57px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius: 69px;
+    padding: 10px;
+    font-size: 32px;
+}
