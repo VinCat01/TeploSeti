@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТеплоСети</title>
+    <link rel="shortcut icon" href="/image/3D_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <img class="logo" src="../image/Логотип цвет.svg">
+                <div class="nav">
+                    <a href="../index.html" class="page_btn">Главная</a>
+                    <a href="about.html" class="page_btn ">О компании</a>
+                    <div class="dropdown">
+                        <button class="dropdown-btn select_page">Потребителям</button>
+                        <div class="dropdown-content ">
+                            <a class="open-modal-btn" href="#">Личный кабинет</a>
+                            <a href="#">Тарифы и нормативы</a>
+                        </div>
+                    </div>
+                    <a href="commer.html" class="page_btn">Коммерческие услуги</a>
+                </div>
+            </div>
+        </header>
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <button class="close-btn">&times;</button>
+                <h2>Регистрация</h2>
+                <form action="" method="get" onsubmit="handleSubmit(event)">
+                    <div class="r_1">
+                        <p>
+                            <label for="r_name r">Введите имя:</label>
+                            <input class="r_name r" type="text" name="name" id="name " required>
+                            <label for="r_phone r">Введите номер телефона:</label>
+                            <input class="r_phone r" type="number" name="phone" id="phone" required>
+                            <label for="r_mail r">Введите почту:</label>
+                            <input class="r_mail r" type="email" name="email" id="email" required>
+                        </p>
+                    </div>
+                    <button type="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="announcement" style="margin-top: 40px;">
+            <p>
+                <span style="display: flex; font-size: 40px; justify-content: center;">
+                    Услуги и цены</span><br><br><br>
+
+                    МП  «Теплосети» – одно из коммунальных предприятий Гиагинского района, работающее в муниципальном
+                    образовании «Гиагинское сельское поселение», предоставляет коммунальные услуги на территории ст.
+                    Гиагинской и пос. Гончарка. Опыт работы и штат квалифицированных специалистов позволяют
+                    предоставлять гарантированного  качества оказываемых услуг, подключать к системам централизованного
+                    водоснабжения, централизованного водоотведения, централизованного  теплоснабжения, устанавливать
+                    индивидуальные  приборы учета расхода воды.<br><br>
+
+                    Перечень платных услуг МП  «Теплосети»: Приказ № 216 с 01 января 2022 года
+
+            </p>
+        </div>
+
+        <footer>
+            <div class="about_foot"> <span>О нас</span><br><br>
+                МП «Теплосети» – одно из коммунальных предприятий Гиагинского района, является гарантирующей
+                организацией в сфере теплоснабжения, холодного водоснабжения и водоотведения в муниципальном образовании
+                «Гиагинское сельское поселение».<br> Предоставляет коммунальные услуги на территории ст. Гиагинской и
+                пос.
+                Гончарка.<br> Многолетний опыт работы и штат квалифицированных специалистов позволяют нам в настоящий
+                время
+                и в будущем обеспечивать гарантию качества оказываемых услуг.<br> О перечне необходимых документов на
+                подключения можно узнать, позвонив по телефону 8 (877) 799-14-88 в рабочее время с 8 до 16 час или в
+                разделе «ПОТРЕБИТЕЛЯМ».</div>
+            <div class="contact_foot">
+                <span>Контакты</span> <br><br>
+                Адрес:385600, Республика Адыгея, Гиагинский район, ст. Гиагинская, ул. Почтовая, д. 6<br><br>
+
+                Телефон:+7 (877) 799-14-88<br><br>
+
+                Телефон:+7 (928) 464 21 30<br><br>
+
+                E-mail:giagteplo@mail.ru<br><br>
+
+
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="../Js/slider.js"></script>
+<script src="../Js/feedback.js"></script>
+<script src="../Js/modal.js"></script>
+
+</html>

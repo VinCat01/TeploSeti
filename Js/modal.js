@@ -12,10 +12,7 @@
             body.classList.add('blur-background');
         });
 
-        openModalBtn2.addEventListener('click', function() {
-            modalOverlay.style.display = 'flex';
-            body.classList.add('blur-background');
-        });
+        
 
         // Закрываем модальное окно при клике на крестик
         closeBtn.addEventListener('click', function() {
@@ -29,4 +26,8 @@
                 modalOverlay.style.display = 'none';
                 body.classList.remove('blur-background');
             }
+        });
+        openModalBtn2.addEventListener('click', function() {
+            modalOverlay.style.display = 'flex';
+            body.classList.add('blur-background');
         });
