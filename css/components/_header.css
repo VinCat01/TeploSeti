@@ -124,10 +124,12 @@
         background-color: rgba(0, 0, 0, 0.8);
         flex-direction: column;
         padding: 20px 0;
+        z-index: 10;
     }
     
     .nav.active {
         display: flex;
+        z-index: 10;
     }
     
     .page_btn, .dropdown-btn {
